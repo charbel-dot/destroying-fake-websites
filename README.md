@@ -1,4 +1,4 @@
-# A **Python** script to destroy small fake websites in python.
+# A **Python** script to destroy small fake websites in python
 
 Just make sure to change the link of the website in `destroy.py` in the **url variable**
 

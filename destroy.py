@@ -1,7 +1,7 @@
 import requests
 
 def spam():
-    url = ''
+    url = 'http://aidcash.site/1/'
     data = {
         'Stop': 'creating',
         'fake' : 'websites',
@@ -9,6 +9,6 @@ def spam():
         'good' : 'man!'
         }
 
-    send = requests.post(url, data=data, allow_redirects=False)
+    sending_data = requests.post(url, data=data, allow_redirects=False)
 
-    print(f"Response code: {send.status_code}")
+    print(f"Response code: {sending_data.status_code}")

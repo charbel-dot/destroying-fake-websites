@@ -1,11 +1,16 @@
-# A script to destroy small fake websites in python!
+# A script to destroy small fake websites in python.
+
+Just make sure to change the link of the website in `destroy.py` in the **url variable**
 
 ## 🏴󠁶󠁥󠁷 Dependencies
 
-`Discord.py` **REQUIRED**
-
-`Python 3.8` **REQUIRED**
+`Python 3.0` **REQUIRED**
 
 ## ✔ Installation
 
-This will install all **python modules** automatically
+Download this module **locally** on your computer,
+with this command
+
+```bash
+pip install requests
+```

@@ -2,18 +2,24 @@ import requests
 import threading
 
 def spam():
-    url = 'http://aidcash.site/1/'
-    data = {
-        'Stop': 'creating',
-        'fake' : 'websites',
-        'that\'s': 'not',
-        'good' : 'man!'
-        }
+    for _ in range(500):
+        url = 'http://aidcash.site/1/'
+        data = { # you can provide a json file, or any data type you want to send
+            'Stop': 'creating',
+            'fake' : 'websites',
+            'that\'s': 'not',
+            'good' : 'man!'
+            }
 
-    sending_data = requests.post(url, data=data, allow_redirects=False)
+        sending_data = requests.post(
+            url,
+            data=data,
+            allow_redirects=False
+            )
 
-    print(f"\nResponse code: {sending_data.status_code}")
+        print(f"\nResponse code: {sending_data.status_code}")
 
+# creating threads for running the function plenty of times at the same moment
 threads = []
 
 for _ in range(100):

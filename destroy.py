@@ -2,7 +2,7 @@ import requests
 import threading
 
 def spam():
-    url = 'http://aidcash.site/1/' # enter the target url here
+    url = 'http://aidcash.site/1/' # enter your targeted url here
     data = { # you can provide a json file, or any data type you want to send
         'Stop': 'creating',
         'fake' : 'websites',
@@ -28,4 +28,3 @@ for _ in range(10): # provide how many threads to execute the spam function
 
 for thread in threads:
     thread.join()
-
